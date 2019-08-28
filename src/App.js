@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import SpaceImage from './components/DailyImage/SpaceImage'
+import Logo from './components/NavDisplay/Logo/Logo'
 import "./App.css";
 
 function App() {
@@ -18,10 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <img src="./src/img/spacehead.png" alt="SpaceHeadLogo"></img>
       <SpaceImage title={data.title}
                   url={data.url}
                   explanation={data.explanation} />
