@@ -1,13 +1,14 @@
 import React from "react";
+import styled from 'styled-components';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const SpaceImage = (props) => {
-    console.log(props)
+const SpaceImage = (prop) => {
+    console.log(prop)
     return (
         <div>
-            <h1>Space, the Final Frontier</h1>
-            <h2>{props.title}</h2>
-            <img src={props.url} alt="Daily Space Pic" />
-            <p>{props.explanation}</p>
+            <h2>{prop.title}</h2> 
+            <img src={prop.url} alt="Daily Space Pic" />
+            <p>{prop.explanation}</p>
         </div>
     );
 }
