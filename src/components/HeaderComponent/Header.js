@@ -12,16 +12,28 @@ function Header(prop){
     `
 
     const CustomH2 = styled.h2`
-        margin: 5rem;
-        margin-bottom: 2rem;
-        font-size: 4rem;
+        margin: 3rem;
+        font-size: 3.5rem;
+        color: gray;
+        font-style: bold;
+    `
+
+    const CustomH3 = styled.h3`
+        margin: 0rem 5rem 0rem 5rem;
+        font-size: 2rem;
+    `
+
+    const CustomH4 = styled.h4`
         font-style: italic;
+        margin-bottom: 2rem;
     `
 
     return (
       <>
         <CustomH1>{headerState}</CustomH1>
-        <CustomH2>{prop.title}</CustomH2>
+        <CustomH2>Daily Pictures From Space</CustomH2>
+        <CustomH3>{prop.title}</CustomH3>
+        <CustomH4>{prop.date}</CustomH4>
       </>
     );
 }

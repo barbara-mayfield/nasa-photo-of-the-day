@@ -6,8 +6,8 @@ const Explanation = (prop) => {
     console.log(prop)
 
     const CustomPara = styled.p`
-        margin: 2rem;
-        padding: 2rem;
+        margin: 1rem 2rem;
+        padding: 0 10rem;
         text-align: justify;
     `
 
